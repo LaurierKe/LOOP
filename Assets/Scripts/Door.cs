@@ -5,6 +5,12 @@ public class Door : MonoBehaviour
 {
     public NPC.Symbol symbol;
     private bool _canBeOpened = false;
+
+    private void Start()
+    {
+        print(Screen.width + "," + Screen.height);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) return;

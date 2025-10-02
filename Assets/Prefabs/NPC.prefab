@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3895233835837034303}
   - component: {fileID: 2990938977262562080}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Symbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8448466993011208027}
   - component: {fileID: 8179716417538482152}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Speech Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
