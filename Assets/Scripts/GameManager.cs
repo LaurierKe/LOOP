@@ -13,7 +13,18 @@ public class GameManager : MonoBehaviour
     public int starCount;
     public int spadeCount;
 
-    public TextMeshProUGUI gui; 
+    [HideInInspector]
+    public int heartCountFound;
+    [HideInInspector]
+    public int starCountFound;
+    [HideInInspector]
+    public int spadeCountFound;
+
+    public TextMeshProUGUI gui;
+
+    public TextMeshProUGUI heartCounter;
+    public TextMeshProUGUI starCounter;
+    public TextMeshProUGUI spadeCounter;
     private void Awake()
     {
         if (instance != null)
@@ -47,7 +58,12 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    public void UpdateUI()
+    {
+        heartCounter.text = heartCountFound.ToString();
+        starCounter.text = starCountFound.ToString();
+        spadeCounter.text = spadeCountFound.ToString();
+    }
     public NPC.Symbol  GreatestSymbol()
     {
         int greatestVal = Mathf.Max(heartCount,spadeCount,starCount);
